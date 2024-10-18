@@ -1,0 +1,17 @@
+.heading {
+  margin: 0 8px;
+  text-align: center;
+  padding: 3px;
+  color: orange;
+}
+.heading:hover {
+  background-color: blue;
+  color: white;
+  scale: 1rem;
+  cursor: pointer;
+}
+
+.css-1nf0fen-MuiTypography-root {
+  color: red !important;
+  font-size: 5px !important;
+}
