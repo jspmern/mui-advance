@@ -26,6 +26,15 @@ import { colors, createTheme } from "@mui/material";
 //     },
 //     spacing: 8,  // Default spacing of 8px (padding, margin, etc.)
 // })
+// Extend the palette types to include custom colors
+declare module '@mui/material/styles' {
+    interface Palette {
+        utsavColor: Palette['primary'];
+    }
+    interface PaletteOptions {
+        utsavColor?: PaletteOptions['primary'];
+    }
+}
 const theme = createTheme({
     palette: {
         primary: {
@@ -34,6 +43,10 @@ const theme = createTheme({
         secondary: {
             main: '#03dac6',  // Custom teal color
         },
+        utsavColor: {
+            main: colors.orange[700]
+        }
+
     },
     typography: {
         h1: {
@@ -57,5 +70,6 @@ const theme = createTheme({
             xl: 1920,
         },
     },
+
 })
 export default theme;
